@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
 
 *{
@@ -37,16 +38,15 @@ header{
     z-index:100;
 }
 
-.logo{
-    font-size:3rem;
-    color: #45a049;
-    font-weight:800;
-    cursor:pointer;
-    transition:0.5s ease;
-
+.container {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
 }
-.logo:hover{
-    transform:scale(1.1);
+
+img {
+    width: 100%;
+    height: auto; /* Adjust based on your needs */
 }
 
 nav a{
