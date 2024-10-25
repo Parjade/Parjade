@@ -1,109 +1,112 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-header {
-    background: #4A90E2;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        header {
+            background: #45A049;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            color: #fff;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+        nav ul {
+            display: inline;
+            margin: 0 15px;
+        }
 
-nav ul li a.active {
-    text-decoration: underline;
-}
+        nav ul  a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-main {
-    padding: 20px;
-    background: #fff;
-    max-width: 900px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+        nav ul  a.active {
+            text-decoration: underline;
+        }
 
-h2 {
-    color: #333;
-}
+        main {
+            padding: 20px;
+            background: #fff;
+            max-width: 900px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 
-.tab-content {
-    display: none;
-}
+        h2 {
+            color: #333;
+        }
 
-.tab-content.active {
-    display: block;
-}
+        .tab-content {
+            display: none;
+        }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+        .tab-content.active {
+            display: block;
+        }
 
-.form-group {
-    margin-bottom: 15px;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-input[type="text"],
-input[type="date"],
-input[type="tel"],
-input[type="email"],
-input[type="file"] {
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s;
-}
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
 
-input:focus {
-    border-color: #4A90E2;
-    outline: none;
-}
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="file"] {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
 
-button {
-    padding: 10px;
-    background: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
+        input:focus {
+            border-color: #45A049;
+            outline: none;
+        }
 
-button:hover {
-    background: #218838;
-}
+        button {
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #4A90E2;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+        button:hover {
+            background: #218838;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #45A049;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
