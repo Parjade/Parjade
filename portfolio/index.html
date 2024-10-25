@@ -40,6 +40,55 @@
         <a href="form.html" class="btn">Form</a>
     
     </section>
-    
+    <script>
+        //go to form page
+        document.addEventListener("DOMContentLoaded", () => {
+            webspeech(); // Initialize speech recognition when the DOM is fully loaded
+        });
+
+function webspeech() {
+    if (!('SpeechRecognition' in window) && !('webkitSpeechRecognition' in window)) {
+        alert('Your browser does not support the Web Speech API.');
+    } else {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const recognition = new SpeechRecognition();
+        
+        recognition.lang = 'en-US'; // Set language for recognition
+        recognition.interimResults = false; // Get final results only
+        recognition.maxAlternatives = 1; // Maximum number of alternatives returned
+
+        recognition.onstart = () => {
+            console.log('Speech recognition service has started.');
+            document.getElementById('youSaid').textContent = "Listening...";
+        };
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript; // Get the transcript of the first result
+            console.log(`Result received: ${transcript}`);
+
+            // Check if the transcript matches the command to go to the form page
+            if (transcript.toLowerCase() === "go to form page") {
+                window.location.href = "form.html"; // Navigate to form.html
+            } else if(transcript.toLowerCase() === "go to login page"){
+                window.location.href = "login.html"; // Navigate to login.html
+            } else if(transcript.toLowerCase() === "go to sign up page"){
+                window.location.href = "signup.html"; //Navigate to signup.html
+            }
+        };
+
+        recognition.onerror = (event) => {
+            console.error('Error occurred in recognition: ' + event.error);
+        };
+
+        recognition.onend = () => {
+            console.log('Speech recognition service has stopped.');
+            recognition.start(); // Restart recognition to listen again
+        };
+
+        // Start listening automatically on page load
+        recognition.start();
+    }
+}
+    </script>
 </body>
 </html>
