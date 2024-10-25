@@ -59,7 +59,6 @@ function webspeech() {
 
         recognition.onstart = () => {
             console.log('Speech recognition service has started.');
-            document.getElementById('youSaid').textContent = "Listening...";
         };
 
         recognition.onresult = (event) => {
